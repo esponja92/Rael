@@ -2,5 +2,6 @@ from django.conf.urls import include, url
 from . import views
 
 urlpatterns = [
-	url(r'^inicio/$', views.inicio), 
+	url(r'^$', views.inicio),
+	url(r'^post/new/$', views.post_new, name='post_new'),
 ]
